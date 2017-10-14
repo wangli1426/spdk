@@ -36,7 +36,7 @@ S :=
 SPDK_ROOT_DIR := $(CURDIR)
 include $(SPDK_ROOT_DIR)/mk/spdk.common.mk
 
-DIRS-y += lib test examples app
+DIRS-y += lib examples app
 
 .PHONY: all clean $(DIRS-y) config.h CONFIG.local mk/cc.mk
 
@@ -52,7 +52,6 @@ clean: $(DIRS-y)
 
 lib: $(DPDKBUILD)
 app: lib
-test: lib
 examples: lib
 pkgdep:
 	sh ./scripts/pkgdep.sh

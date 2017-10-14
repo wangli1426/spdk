@@ -1,4 +1,4 @@
-#
+
 #  BSD LICENSE
 #
 #  Copyright (c) Intel Corporation.
@@ -34,7 +34,7 @@
 SPDK_ROOT_DIR := $(abspath $(CURDIR)/..)
 include $(SPDK_ROOT_DIR)/mk/spdk.common.mk
 
-DIRS-y += bdev blob blobfs conf copy cunit event json jsonrpc \
+DIRS-y += bdev blob blobfs conf copy event json jsonrpc \
           log lvol env_dpdk net rpc trace util nvme nvmf scsi ioat \
 	  ut_mock iscsi
 ifeq ($(OS),Linux)
